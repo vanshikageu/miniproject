@@ -125,10 +125,11 @@ struct symbol_table
        {
            if(strcmp(label,project_symtab[j].label)==0)
            {
-               project_symtab[j]=-1;
+               printf("error in label");
                flag=1;
                break;
            }
+       }
            if(flag==0)
            {
                strcpy(project_symtab[label_count].label,label);
@@ -137,7 +138,7 @@ struct symbol_table
            }
 
        }
-   }
+
 
 
    void check_opcode()
