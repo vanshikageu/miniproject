@@ -38,12 +38,12 @@ struct symbol_table
    void pass1()
    {
        FILE *fp1,*fp2;
-       *fp1=fopen("inputfile.txt","r");
-       *fp2=fopen("intermediatefile.txt","w");
+       fp1=fopen("inputfile.txt","r");
+       fp2=fopen("intermediatefile.txt","w");
 
        printf(" LABEL\tOPCODE\tOPERAND");
-       fscanf(f1,"%s \t %s \t %s \n",label,opcode,operand);
-       linebyline_read();\\
+       fscanf(fp1,"%s \t %s \t %s \n",label,opcode,operand);
+
 
 
        if(strcmp(opcode,"START"))
