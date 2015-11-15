@@ -3,9 +3,8 @@
 #include<string.h>
 
 
-linebyline_read();
-check_label();
-check_opcode();
+ void check_label();
+ void check_opcode();
 
 struct operation_table
 {
@@ -63,9 +62,9 @@ struct symbol_table
 
                if(label=="*" && opcode!="*" && operand!="*")
                {
-                   check_opcode();\\
+                   check_opcode();
                    printf("\n %d \t %s \t %s \t %s \n",location_counter,label,opcode,operand);
-                   fprintf(fp2,"\n %d \t %s \t %s \t %s \n",location_counter,label,opcode,operand);\\
+                   fprintf(fp2,"\n %d \t %s \t %s \t %s \n",location_counter,label,opcode,operand);
                }
 
                 if(label=="*" && opcode!="*" && operand=="*")
@@ -112,7 +111,7 @@ struct symbol_table
        fp4=fopen("result.txt","w");
        fp5=fopen("optab.txt","r");
 
-        fscanf(fp3,"\n %d \t%s \t %s \t %s \n"location_counter,label,opcode,operand);
+        fscanf(fp3,"\n %d \t%s \t %s \t %s \n",location_counter,label,opcode,operand);
 
 
 
