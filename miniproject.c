@@ -3,8 +3,8 @@
 #include<string.h>
 
 
- void check_label();
- void check_opcode();
+ //void check_label();
+ //void check_opcode();
 
 struct operation_table
 {
@@ -49,6 +49,7 @@ struct symbol_table
        {
            start_address=atoi(operand);
            location_counter=start_address;
+           strcpy(program_name,label);
            printf("\n %d \t %s \t %s \t %s\n",location_counter,label,opcode,operand);
            fprintf(fp2,"\n %d \t %s \t %s \t %s\n",location_counter,label,opcode,operand);
        }
