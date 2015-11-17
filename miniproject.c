@@ -52,6 +52,7 @@ struct symbolTable
            strcpy(programName,label);
            printf("\n %d \t %s \t %s \t %s\n",locationCounter,label,opcode,operand);
            fprintf(fp2,"\n %d \t %s \t %s \t %s\n",locationCounter,label,opcode,operand);
+           fscanf("%s\t%s\t%s",label,opcode,operand);
        }
 
        else
