@@ -1,10 +1,13 @@
-PROG  START 1000
- *    LDA   FIVE
- *     STA   ALPHA
- *     LDCH   CHARZ
- *     STCH   C1
-ALPHA RESW    1
-FIVE  WORD    5
-CHARZ BYTE  C'Z'
-C1    RESW   1
-      END
+PROG START 2000
+*    LDA   FIVE
+*    STA   ALPHA
+*    LDCH  ZERO
+*    STCH   ONE
+*  RESB  4096
+FIVE WORD   4096
+* RSUB   *
+* BYTE c'EOF'
+ALPHA RESW 1
+ZERO RSUB *
+ONE  RESB  1
+*    END   *

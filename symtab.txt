@@ -1,0 +1,8 @@
+
+300c	FIVE
+
+3015	ALPHA
+
+3018	ZERO
+
+301b	ONE
